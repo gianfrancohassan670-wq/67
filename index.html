@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Organizzazione di eventi, feste e momenti speciali.">
+<title>Eventi Speciali | Il tuo evento, come lo immagini</title>
+<style>
+:root{--ink:#493b3a;--muted:#786967;--rose:#c58e91;--pale:#fbf4f1;--cream:#fffaf7;--line:#eadbd6}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.6}a{color:inherit}.wrap{width:min(1100px,92%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:#fffaf7ed;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{font-family:Georgia,serif;font-size:1.35rem;letter-spacing:.04em;text-decoration:none}.links{display:flex;gap:22px;align-items:center}.links a{text-decoration:none;font-size:.92rem}.links a:hover{color:var(--rose)}.menu{display:none;border:1px solid var(--line);background:white;border-radius:9px;padding:8px 12px;font-size:1rem}
+.hero{padding:70px 0 60px;background:linear-gradient(115deg,#fbf1ee 0%,#fffaf7 58%,#f4e3df 100%)}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:42px;align-items:center}.eyebrow{text-transform:uppercase;letter-spacing:.18em;font-size:.75rem;color:#a36e72;font-weight:bold}.hero h1{font-family:Georgia,serif;font-weight:normal;font-size:clamp(2.6rem,5vw,4.6rem);line-height:1.08;margin:14px 0 20px}.hero p{color:var(--muted);max-width:520px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;border-radius:30px;padding:12px 21px;border:1px solid var(--rose);font-weight:bold;font-size:.92rem;transition:.2s}.btn.primary{background:var(--rose);color:white}.btn.secondary{color:var(--ink);background:transparent}.btn:hover{transform:translateY(-2px);filter:brightness(.97)}.hero-img{width:100%;height:440px;object-fit:cover;border-radius:48% 48% 12px 12px;box-shadow:0 18px 50px #6b41421c}
+section{padding:72px 0}.section-head{text-align:center;max-width:680px;margin:0 auto 36px}.section-head h2{font:normal clamp(2rem,4vw,3rem) Georgia,serif;margin:8px 0 12px}.section-head p{color:var(--muted);margin:0}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{padding:28px 24px;background:white;border:1px solid var(--line);border-radius:16px}.icon{font-size:1.7rem}.card h3{font:normal 1.4rem Georgia,serif;margin:12px 0 8px}.card p{margin:0;color:var(--muted);font-size:.95rem}
+.custom{background:var(--pale)}.custom-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}.custom-img{width:100%;height:370px;object-fit:cover;border-radius:14px}.custom h2{font:normal clamp(2rem,4vw,3rem) Georgia,serif;line-height:1.15}.custom p{color:var(--muted)}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.gallery img{width:100%;height:260px;object-fit:cover;border-radius:12px}.contact{background:#ead6d1;text-align:center}.contact h2{font:normal clamp(2rem,4vw,3rem) Georgia,serif;margin:8px 0}.contact p{color:#695856}.contact .actions{justify-content:center}
+footer{padding:32px 0;background:#493b3a;color:#fff7f3}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.foot a{color:#fff7f3}.small{font-size:.84rem;opacity:.8}
+@media(max-width:760px){.nav{min-height:64px}.menu{display:block}.links{display:none;position:absolute;left:0;right:0;top:64px;background:var(--cream);padding:18px 4%;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start}.links.open{display:flex}.hero{padding:45px 0}.hero-grid,.custom-grid{grid-template-columns:1fr;gap:28px}.hero-img{height:330px;order:-1}.cards{grid-template-columns:1fr}.gallery{grid-template-columns:1fr 1fr}.gallery img{height:190px}section{padding:54px 0}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="brand" href="#home">Eventi Speciali</a>
+<button class="menu" id="menuBtn" aria-expanded="false" aria-label="Apri menu">☰</button>
+<nav class="links" id="navLinks"><a href="#home">Home</a><a href="#servizi">Servizi</a><a href="#galleria">Galleria</a><a href="#contatti">Contatti</a></nav>
+</div></header>
+<main>
+<section class="hero" id="home"><div class="wrap hero-grid">
+<div><div class="eyebrow">Momenti da ricordare</div><h1>Il tuo evento,<br>come lo immagini.</h1><p>Creiamo atmosfere curate e indimenticabili per i tuoi momenti speciali. Raccontaci la tua idea: penseremo insieme ai dettagli.</p>
+<div class="actions"><a class="btn primary" href="#contatti">Richiedi informazioni</a><a class="btn secondary" href="#servizi">Scopri i servizi</a></div></div>
+<img class="hero-img" src="images/hero-allestimento.jpg" alt=""/>
+</div></section>
+<section id="servizi"><div class="wrap"><div class="section-head"><div class="eyebrow">Cosa facciamo</div><h2>Un tocco speciale per ogni occasione</h2><p>Dall'idea iniziale agli ultimi dettagli, progettiamo insieme un evento che ti rappresenti.</p></div>
+<div class="cards">
+<article class="card"><div class="icon">🌸</div><h3>Feste private</h3><p>Compleanni, anniversari e ricorrenze con allestimenti personalizzati.</p></article>
+<article class="card"><div class="icon">🥂</div><h3>Eventi e ricevimenti</h3><p>Atmosfere eleganti per celebrare insieme le occasioni importanti.</p></article>
+<article class="card"><div class="icon">✨</div><h3>Allestimenti</h3><p>Decorazioni, palette di colori e piccoli dettagli pensati per te.</p></article>
+</div></div></section>
+<section class="custom"><div class="wrap custom-grid">
+<img class="custom-img" src="images/tavola-evento.jpg" alt="Tavola allestita per un evento" loading="lazy"/>
+<div><div class="eyebrow">Su misura per te</div><h2>La tua idea merita di diventare realtà.</h2><p>Ogni evento nasce da una storia diversa. Ci prendiamo il tempo per ascoltarti e trasformare le tue idee in un progetto curato nei dettagli.</p><a class="btn primary" href="#contatti">Parliamone</a></div>
+</div></section>
+<section id="galleria"><div class="wrap"><div class="section-head"><div class="eyebrow">Ispirazioni</div><h2>La nostra galleria</h2><p>Qualche idea per immaginare il tuo prossimo evento.</p></div>
+<div class="gallery">
+<img src="images/hero-allestimento.jpg" alt="Decorazioni eleganti" loading="lazy"/>
+<img src="images/gallery-allestimento.jpg" alt="Ricevimento" loading="lazy"/>
+<img src="images/tavola-evento.jpg" alt="Tavola decorata" loading="lazy"/>
+</div></div></section>
+<section class="contact" id="contatti"><div class="wrap"><div class="eyebrow">Cominciamo da qui</div><h2>Raccontaci il tuo evento</h2><p>Scrivici per informazioni, disponibilità o un preventivo personalizzato.</p>
+<div class="actions"><a class="btn primary" id="waLink" href="https://wa.me/393481647072" target="_blank" rel="noopener">Scrivici su WhatsApp</a><a class="btn secondary" id="mailLink" href="mailto:info@esempio.it">Invia un'e-mail</a></div>
+<p class="small">Ricorda di sostituire il numero WhatsApp e l'e-mail con i tuoi contatti.</p>
+</div></section>
+</main>
+<footer><div class="wrap foot"><div><strong>Eventi Speciali</strong><div class="small">Momenti belli, curati nei dettagli.</div></div><div class="small">© <span id="year"></span> Eventi Speciali</div><div><a href="#home">Torna su ↑</a></div></div></footer>
+<script>
+const menuBtn=document.getElementById('menuBtn'), navLinks=document.getElementById('navLinks');
+menuBtn.addEventListener('click',()=>{const open=navLinks.classList.toggle('open');menuBtn.setAttribute('aria-expanded',String(open));menuBtn.textContent=open?'✕':'☰';});
+navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{navLinks.classList.remove('open');menuBtn.setAttribute('aria-expanded','false');menuBtn.textContent='☰';}));
+document.getElementById('year').textContent=new Date().getFullYear();
+// Personalizza questi due collegamenti prima di pubblicare.
+</script>
+</body></html>
